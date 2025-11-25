@@ -1,0 +1,6 @@
+artifact_location: file:///home/hoaibao174/mlops-news-category/mlruns/903414889640958850
+creation_time: 1764051735243
+experiment_id: '903414889640958850'
+last_update_time: 1764051735243
+lifecycle_stage: active
+name: news_classification_experiment

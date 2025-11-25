@@ -1,0 +1,14 @@
+artifact_uri: file:///home/hoaibao174/mlops-news-category/mlruns/903414889640958850/6f56d05b6db44a538d62d4cd3fa2295c/artifacts
+end_time: 1764051764080
+entry_point_name: ''
+experiment_id: '903414889640958850'
+lifecycle_stage: active
+run_id: 6f56d05b6db44a538d62d4cd3fa2295c
+run_name: housing_linear_regression_5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764051736786
+status: 3
+tags: []
+user_id: hoaibao174

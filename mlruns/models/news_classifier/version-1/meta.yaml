@@ -1,0 +1,15 @@
+creation_timestamp: 1764052227227
+current_stage: None
+deployment_job_state: null
+description: ''
+last_updated_timestamp: 1764052227227
+model_id: m-42572ea67c224b9a818f60afb3c09647
+name: news_classifier
+run_id: 6f56d05b6db44a538d62d4cd3fa2295c
+run_link: ''
+source: file:///home/hoaibao174/mlops-news-category/mlruns/903414889640958850/models/m-42572ea67c224b9a818f60afb3c09647/artifacts
+status: READY
+status_message: null
+storage_location: file:///home/hoaibao174/mlops-news-category/mlruns/903414889640958850/models/m-42572ea67c224b9a818f60afb3c09647/artifacts
+user_id: null
+version: 1

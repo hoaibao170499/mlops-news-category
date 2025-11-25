@@ -1,2 +1,4 @@
-# mlops-face-emotion
-MLOps pipeline for Real-time Face Emotion Recognition
+# mlops
+MLOps system for news classification
+
+source .venv/bin/activate

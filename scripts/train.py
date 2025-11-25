@@ -44,6 +44,8 @@ def preprocess_text(text):
 def preprocess_data(row):
     return row.astype(str).apply(preprocess_text)
 
+mlflow.set_tracking_uri(uri="http://localhost:8080")
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -92,7 +94,7 @@ def train():
     )
 
     logger.info("Training model...")
-    with mlflow.start_run(run_name="housing_linear_regression_5"):
+    with mlflow.start_run(run_name="news_classification_1"):
         model.fit(X_train, y_train)
 
         # Evaluate model performance

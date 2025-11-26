@@ -22,6 +22,16 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
+MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", "http://localhost:5050")
+mlflow.set_tracking_uri(uri=MLFLOW_TRACKING_URI)
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(name)s - %(message)s",
+)
+logger = logging.getLogger("news_classification")
+
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
 
@@ -43,15 +53,6 @@ def preprocess_text(text):
 
 def preprocess_data(row):
     return row.astype(str).apply(preprocess_text)
-
-mlflow.set_tracking_uri(uri="http://localhost:8080")
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(name)s - %(message)s",
-)
-logger = logging.getLogger("news_classification")
 
 def train():
     mlflow.set_experiment("news_classification_experiment")

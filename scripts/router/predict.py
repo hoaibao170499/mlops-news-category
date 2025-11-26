@@ -1,9 +1,16 @@
+import os
+
 import mlflow.sklearn
 import pandas as pd
 from fastapi import APIRouter
 
 from scripts.schemas.request import NewsPredictionRequest
 from scripts.schemas.response import NewsPredictionResponse
+
+MLFLOW_TRACKING_URI = os.getenv("OUR_MLFLOW_HOST", "http://localhost:5050")
+print(f"MLFLOW_TRACKING_URI: {MLFLOW_TRACKING_URI}")
+
+mlflow.set_tracking_uri(uri=MLFLOW_TRACKING_URI)
 
 model_name = "news_classifier"
 model_version = "1"

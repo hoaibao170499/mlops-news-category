@@ -1,0 +1,10 @@
+artifact_location: file:///home/hoaibao174/mlops-news-category/mlruns/903414889640958850/models/m-3d8c96467ae54a2eaaf9c7755fd6ac6c/artifacts
+creation_timestamp: 1764300444588
+experiment_id: '903414889640958850'
+last_updated_timestamp: 1764300458266
+model_id: m-3d8c96467ae54a2eaaf9c7755fd6ac6c
+model_type: null
+name: model
+source_run_id: 8ee7b617c5134917b808b7d25e451d43
+status: 2
+status_message: null

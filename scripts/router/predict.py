@@ -14,13 +14,23 @@ mlflow.set_tracking_uri(uri=MLFLOW_TRACKING_URI)
 
 model_name = "news_classifier"
 model_version = "1"
-alias = "the_best"
+alias = "production"
 
 model_uri = f"models:/{model_name}/{model_version}"
 
 model = mlflow.sklearn.load_model(model_uri)
 
+# Lazy load model - only load when needed
+_model = None
 news_router = APIRouter(prefix="/news")
+
+
+def get_model():
+    """Lazy load the MLflow model only when needed."""
+    global _model
+    if _model is None:
+        _model = mlflow.sklearn.load_model(model_uri)
+    return _model
 
 ID_TO_LABEL = {
     0: 'atheism',

@@ -1,0 +1,14 @@
+artifact_uri: file:///home/hoaibao174/mlops-news-category/mlruns/903414889640958850/8ee7b617c5134917b808b7d25e451d43/artifacts
+end_time: 1764300458279
+entry_point_name: ''
+experiment_id: '903414889640958850'
+lifecycle_stage: active
+run_id: 8ee7b617c5134917b808b7d25e451d43
+run_name: news_classification_1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764300423830
+status: 3
+tags: []
+user_id: hoaibao174

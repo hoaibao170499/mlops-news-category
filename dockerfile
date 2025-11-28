@@ -12,4 +12,6 @@ COPY scripts/ scripts/
 
 ENV PYTHONPATH=/app
 
+RUN python -m nltk.downloader stopwords words wordnet punkt punkt_tab
+
 CMD ["python3", "scripts/api.py"]

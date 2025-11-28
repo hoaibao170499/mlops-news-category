@@ -23,6 +23,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
 MLFLOW_TRACKING_URI = os.getenv("MLFLOW_TRACKING_URI", "http://localhost:5050")
+print(f"MLFLOW_TRACKING_URI: {MLFLOW_TRACKING_URI}")
+
 mlflow.set_tracking_uri(uri=MLFLOW_TRACKING_URI)
 
 # Configure logging

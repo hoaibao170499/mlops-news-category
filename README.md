@@ -40,7 +40,7 @@ Pipeline gồm tiền xử lý – huấn luyện – đánh giá – phục v�
 
 ### **Confusion Matrix**
 
-<img src="https://drive.google.com/file/d/1BEpAr7SwRW-wyXtq5uIK8K3wPHYVijbS/view?usp=sharing" width="420"/>
+<img src="https://drive.google.com/file/d/1BEpAr7SwRW-wyXtq5uIK8K3wPHYVijbS/view?usp=drive_link" width="420"/>
 
 ---
 
